@@ -7,35 +7,29 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            color: #333;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
 
         header {
-            background-color: #ff0000;
-            color: white;
+            background-color: #e63946;
             padding: 20px;
             text-align: center;
+            color: white;
         }
 
         header h1 {
             margin: 0;
             font-size: 2.5em;
-        }
-
-        header h2 {
-            margin: 5px 0 0;
-            font-size: 1.2em;
-            color: #ffcc00;
+            font-weight: bold;
         }
 
         nav {
-            display: flex;
-            justify-content: center;
-            background-color: #007bff;
+            background-color: #457b9d;
             padding: 10px;
+            text-align: center;
         }
 
         nav a {
@@ -49,93 +43,98 @@
             text-decoration: underline;
         }
 
-        section {
-            padding: 20px;
-        }
-
         .hero {
             background-image: url('https://www.hotwheels.com/etc.clientlibs/hw/clientlibs/clientlibs/base/resources/images/backgrounds/hw-desktop-hero-bg.jpg');
             background-size: cover;
             color: white;
             padding: 100px 20px;
             text-align: center;
+            position: relative;
+        }
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+            padding: 20px;
+            display: inline-block;
+            border-radius: 8px;
         }
 
         .hero h2 {
             font-size: 2.5em;
             margin: 0;
+            text-shadow: 2px 2px 4px #000000; /* Sombra no texto */
         }
 
-        .about, .products, .events, .contact {
-            background-color: white;
-            margin: 20px 0;
+        .hero p {
+            font-size: 1.2em;
+            text-shadow: 2px 2px 4px #000000; /* Sombra no texto */
+        }
+
+        section {
             padding: 20px;
-            border-radius: 8px;
+            text-align: center;
         }
 
-        .about h2, .products h2, .events h2, .contact h2 {
-            color: #ff0000;
+        section h2 {
+            color: #e63946;
             font-size: 2em;
             margin-bottom: 10px;
         }
 
-        .about p, .products p, .events p, .contact p {
-            font-size: 1.1em;
-            line-height: 1.6;
+        section p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
         }
 
         footer {
-            background-color: #333;
+            background-color: #457b9d;
             color: white;
             text-align: center;
             padding: 10px;
-        }
-
-        footer p {
-            margin: 0;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>IS BRINQUEDOS</h1>
-        <h2>Carros Colecionáveis em Porto Alegre</h2>
     </header>
 
     <nav>
-        <a href="#about">Sobre</a>
-        <a href="#products">Produtos</a>
-        <a href="#events">Eventos</a>
-        <a href="#contact">Contato</a>
+        <a href="#sobre-nos">Sobre Nós</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#contato">Contato</a>
     </nav>
 
     <section class="hero">
-        <h2>O Melhor em Carros Colecionáveis</h2>
-        <p>Hot Wheels, Greenlight, Johnny Lightning e muito mais!</p>
+        <div class="overlay">
+            <h2>O Melhor em Carros Colecionáveis</h2>
+            <p>Hot Wheels, Greenlight, Johnny Lightning e muito mais!</p>
+        </div>
     </section>
 
-    <section id="about" class="about">
+    <section id="sobre-nos">
         <h2>Sobre Nós</h2>
         <p>A IS BRINQUEDOS é uma loja especializada em carros colecionáveis, localizada em Porto Alegre, RS. Com mais de 12 anos de experiência no mercado, oferecemos uma ampla variedade de marcas renomadas, como Hot Wheels, Greenlight e Johnny Lightning. Nosso atendimento é especializado, garantindo que cada cliente encontre exatamente o que procura.</p>
     </section>
 
-    <section id="products" class="products">
+    <section id="produtos">
         <h2>Produtos</h2>
         <p>Trabalhamos com uma seleção exclusiva de carros colecionáveis das marcas mais respeitadas do mercado. Seja você um colecionador iniciante ou um veterano, temos o que você precisa para completar sua coleção.</p>
     </section>
 
-    <section id="events" class="events">
+    <section id="eventos">
         <h2>Eventos</h2>
-        <p>Participamos regularmente de eventos e encontros de colecionadores em Porto Alegre e região. Fique de olho em nosso Instagram <a href="https://www.instagram.com/isbrinquedos_" target="_blank">@isbrinquedos_</a> para saber mais sobre as próximas datas e locais.</p>
+        <p>Participamos regularmente de eventos e encontros de colecionadores em Porto Alegre e região. Fique de olho em nosso Instagram <a href="https://www.instagram.com/isbrinquedos_/" style="color:#e63946;">@isbrinquedos_</a> para saber mais sobre as próximas datas e locais.</p>
     </section>
 
-    <section id="contact" class="contact">
+    <section id="contato">
         <h2>Contato</h2>
         <p>Visite-nos em nossa loja ou entre em contato pelo Instagram para saber mais sobre nossos produtos e eventos.</p>
     </section>
 
     <footer>
-        <p>&copy; 2024 IS BRINQUEDOS - Todos os direitos reservados.</p>
+        <p>&copy; 2024 IS BRINQUEDOS. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
